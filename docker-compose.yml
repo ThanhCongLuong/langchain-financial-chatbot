@@ -1,0 +1,17 @@
+services:
+  web-app:
+    build: .
+    image: thanhcongluong/chat-bot
+    ports:
+      - "8080:7860"
+    volumes:
+      - ./data:/app/data
+      - ./src:/app/src
+      - hf_cache:/root/.cache/huggingface
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - INPUT_PATH=/app/data/input
+      - OUTPUT_PATH=/app/data/output
+    restart: always
+volumes:
+  hf_cache:
