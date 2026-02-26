@@ -35,7 +35,7 @@ List the ready features here:
 - **Ensemble Retrieval**: Combines BM25 and Vector Search to ensure both keyword and semantic accuracy.
 - **Markdown Header Splitting**: Splits documents by logical sections (H1, H2, H3) to maintain context.
 - **Production-Ready CI/CD**: Fully containerized and deployed on AWS App Runner for scalability.
-- 
+  
 ## Setup
 The project dependencies are managed in the `requirements.txt` file located in the root directory.
 
